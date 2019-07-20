@@ -5,9 +5,6 @@
 #![reexport_test_harness_main = "test_main"]
 
 
-// mod serial;
-// mod vga_buffer;
-
 use core::panic::PanicInfo;
 use os::println;
 
@@ -15,7 +12,7 @@ use os::println;
 // ENTRY POINT
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    println!("Zie Voot!{}", "!");
+    println!("Das Voot!{}", "!");
 
     #[cfg(test)]
     test_main();
